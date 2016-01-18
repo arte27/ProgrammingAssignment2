@@ -39,3 +39,11 @@ cacheSolve <- function(x, ...) {
         
 }
 
+## Please take a look at the following example 
+
+#Define and insert the below Matrix to the cash.
+x = rbind(c(2,1), c(1,2))
+m= makeCacheMatrix(x)
+m$get() #look at the cashed matrix
+cacheSolve(m) #calculat inverse matrix 1st time
+cacheSolve(m) #calculate inverse matrix 2nd time(do not compute ,retrieve from the cash)
